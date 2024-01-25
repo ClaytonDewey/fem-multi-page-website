@@ -1,0 +1,6 @@
+@use '../util' as *;
+
+.logo {
+  display: flex;
+  gap: rem(16);
+}
