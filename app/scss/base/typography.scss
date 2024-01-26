@@ -2,16 +2,19 @@
 
 // Typescale = 1.250 - Major Third
 // https://typescale.com/
-h1 {
-  // font-size: var(--fs-4xlarge);
-  font-family: var(--ff-spartan);
-  font-size: rem(24);
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin: 0;
+h1,
+h2 {
+  &.logo {
+    // font-size: var(--fs-4xlarge);
+    font-family: var(--ff-spartan);
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+  }
 }
 h2 {
   font-size: var(--fs-3xlarge);

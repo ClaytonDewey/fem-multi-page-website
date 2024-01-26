@@ -1,0 +1,11 @@
+@use '../util' as *;
+
+.footer {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  text-align: center;
+  &__logo {
+    display: flex;
+    gap: rem(16);
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 type FooterProps = {};
 
@@ -13,6 +14,11 @@ const Footer: React.FC<FooterProps> = () => {
         </p>
         <button>Get in touch</button>
       </section>
+
+      <div className='footer__logo'>
+        <Image src='/assets/logo.png' alt='logo' width='24' height='24' />
+        <h2 className='logo'>Designo</h2>
+      </div>
 
       <p>Our company</p>
       <p>Locations</p>

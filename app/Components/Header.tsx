@@ -9,7 +9,7 @@ const Header: React.FC<HeaderProps> = () => {
     <header className='header container'>
       <div className='header__logo'>
         <Image src='/assets/logo.png' alt='logo' width='24' height='24' />
-        <h1>Designo</h1>
+        <h1 className='logo'>Designo</h1>
       </div>
       <Navbar />
     </header>
