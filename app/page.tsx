@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className='home'>
-      <section className='hero hero__dark'>
+      <section className='hero hero__dark section__hero'>
         <div className='hero__content'>
           <h2>Award-winning custom designs and digital branding solutions</h2>
           <p>
@@ -22,11 +22,11 @@ export default function Home() {
           alt='phone'
           src='/assets/home/desktop/image-hero-phone.png'
           height={1000}
-          width={500}
+          width={600}
         />
       </section>
 
-      <section>
+      <section className='section__design'>
         <div>
           <h2>Web Design</h2>
           <p>View Projects</p>
