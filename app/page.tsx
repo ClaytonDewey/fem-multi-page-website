@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className='home'>
+    <main className='home container'>
       <section className='hero hero__dark section__hero'>
         <div className='hero__content'>
           <h2>Award-winning custom designs and digital branding solutions</h2>
@@ -27,26 +27,32 @@ export default function Home() {
       </section>
 
       <section className='section__design'>
-        <div>
+        <div className='section__design--web'>
           <h2>Web Design</h2>
-          <p>View Projects</p>
+          <Link href='/web-design'>View Projects</Link>
         </div>
 
-        <div>
+        <div className='section__design--app'>
           <h2>App Design</h2>
-          <p>View Projects</p>
+          <Link href='/app-design'>View Projects</Link>
         </div>
 
-        <div>
+        <div className='section__design--graphic'>
           <h2>Graphic Design</h2>
-          <p>View Projects</p>
+          <Link href='/graphic-design'>View Projects</Link>
         </div>
       </section>
 
       <section>
+        <Image
+          src='/assets/home/desktop/illustration-passionate.svg'
+          role='presentation'
+          alt=''
+          height={202}
+          width={202}
+        />
         <h2>Passionate</h2>
         <p>
-          {' '}
           Each project starts with an in-depth brand research to ensure we only
           create products that serve a purpose. We merge art, design, and
           technology into exciting new solutions.

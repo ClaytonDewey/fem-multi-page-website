@@ -1,0 +1,6 @@
+@use '../util' as *;
+
+.grid {
+  display: grid;
+  gap: rem(24);
+}

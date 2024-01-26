@@ -4,7 +4,7 @@ type FooterProps = {};
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer>
+    <footer className='footer container'>
       <section>
         <h2>Let&rsquo;s talk about your project</h2>
         <p>
