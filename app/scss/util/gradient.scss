@@ -1,0 +1,7 @@
+@mixin gradient($deg) {
+  background-image: linear-gradient(
+    #{$deg}deg,
+    var(--gradient-start),
+    transparent
+  );
+}

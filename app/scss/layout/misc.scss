@@ -1,0 +1,17 @@
+@use '../util' as *;
+
+.icon {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    @include gradient(45);
+
+    &--large {
+      width: 202px;
+      border-radius: 202px;
+      height: 202px;
+    }
+  }
+}

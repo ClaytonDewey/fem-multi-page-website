@@ -6,8 +6,11 @@
   --clr-light-primary: hsl(11, 100%, 80%);
   --clr-dark-gray: hsl(264, 5%, 20%);
   --clr-light-gray: hsl(210, 17%, 95%);
-  --clr-black: #000;
+  --clr-black: hsl(270, 3%, 11%);
   --clr-white: #fff;
+
+  --gradient-start: hsla(0, 96%, 19%, 0.1);
+  --gradient-end: hsla(0, 96%, 19%, 0.5);
 
   // Font-family
   --ff-sans: 'Jost', Arial, Helvetica, sans-serif;
