@@ -1,6 +1,11 @@
 @use '../util' as *;
 
-.logo {
-  display: flex;
-  gap: rem(16);
+.header {
+  height: rem(96);
+  padding: rem(34.5) rem(24);
+
+  &__logo {
+    display: flex;
+    gap: rem(16);
+  }
 }

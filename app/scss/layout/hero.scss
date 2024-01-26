@@ -1,0 +1,16 @@
+@use '../util' as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__dark {
+    background: var(--clr-primary);
+    color: var(--clr-white);
+  }
+
+  &__content {
+    padding: rem(80) rem(24) 0;
+  }
+}

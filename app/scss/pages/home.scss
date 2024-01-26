@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+.home {
+  .hero {
+    text-align: center;
+    max-height: rem(640);
+    overflow: hidden;
+
+    h2 {
+      margin: 0;
+      margin-bottom: rem(14);
+      font-size: rem(32);
+      font-style: normal;
+      font-weight: 500;
+      line-height: rem(36); /* 112.5% */
+    }
+
+    p {
+      margin-bottom: rem(24);
+    }
+  }
+}

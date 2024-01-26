@@ -1,16 +1,29 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <>
-      <section>
-        <p>Award-winning custom designs and digital branding solutions</p>
-        <p>
-          With over 10 years in the industry, we are experienced in creating
-          fully responsive websites, app design, and engaging brand experiences.
-          Find out more about our services.
-        </p>
-        <button>Learn more</button>
+    <main className='home'>
+      <section className='hero hero__dark'>
+        <div className='hero__content'>
+          <h2>Award-winning custom designs and digital branding solutions</h2>
+          <p>
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
+          <div className='btn__container'>
+            <Link href='/about' className='btn btn__light'>
+              Learn more
+            </Link>
+          </div>
+        </div>
+        <Image
+          alt='phone'
+          src='/assets/home/desktop/image-hero-phone.png'
+          height={1000}
+          width={500}
+        />
       </section>
 
       <section>
@@ -53,6 +66,6 @@ export default function Home() {
           best experience a company can provide.
         </p>
       </section>
-    </>
+    </main>
   );
 }

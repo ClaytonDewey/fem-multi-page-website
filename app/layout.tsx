@@ -24,7 +24,7 @@ export default function RootLayout({
         className={`${jost.className} ${spartan.className}`}
         suppressHydrationWarning={true}>
         <Header />
-        <main className='container'>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

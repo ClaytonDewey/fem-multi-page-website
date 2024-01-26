@@ -1,0 +1,33 @@
+.btn {
+  display: inline-flex;
+  height: 56px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  margin: auto;
+  text-decoration: none;
+  line-height: 100%;
+  letter-spacing: 1px;
+  transition: var(--transition);
+
+  &__light {
+    background: var(--clr-light-gray);
+    color: var(--clr-dark-gray);
+
+    &:hover {
+      background: var(--clr-light-primary);
+      color: var(--clr-white);
+    }
+  }
+
+  &__dark {
+    background: var(--clr-primary);
+    color: var(--clr-white);
+
+    &:hover {
+      background: var(--clr-light-primary);
+    }
+  }
+}

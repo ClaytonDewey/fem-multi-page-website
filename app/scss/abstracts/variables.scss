@@ -2,6 +2,10 @@
 
 :root {
   // Colors
+  --clr-primary: hsl(11, 73%, 66%);
+  --clr-light-primary: hsl(11, 100%, 80%);
+  --clr-dark-gray: hsl(264, 5%, 20%);
+  --clr-light-gray: hsl(210, 17%, 95%);
   --clr-black: #000;
   --clr-white: #fff;
 
@@ -12,17 +16,16 @@
   --ff-serif: Cambria, Cochin, Georgia, serif;
 
   // Font-sizes
-  --fs-4xlarge: #{rem(61.04)};
-  --fs-3xlarge: #{rem(48.832)};
-  --fs-2xlarge: #{rem(39.06)};
-  --fs-xlarge: #{rem(31.25)};
-  --fs-large: #{rem(25)};
+  --fs-xlarge: #{rem(48)};
+  --fs-large: #{rem(40)};
   --fs-med: #{rem(20)};
   --fs-reg: #{rem(16)};
-  --fs-small: #{rem(12.8)};
-  --fs-xsmall: #{rem(10.24)};
+  --fs-small: #{rem(12)};
+  --fs-xsmall: #{rem(11)};
 
   // Flexbox gap/columns
   --gap: #{rem(20)};
   --columns: 2;
+
+  --transition: all 0.25s ease-in-out;
 }

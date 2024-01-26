@@ -4,7 +4,7 @@ type pageProps = {};
 
 const page: React.FC<pageProps> = () => {
   return (
-    <>
+    <main className='container'>
       <section>
         <h2>About us</h2>
         <p>
@@ -16,7 +16,6 @@ const page: React.FC<pageProps> = () => {
           audiences.
         </p>
       </section>
-
       <section>
         <h2>World-class talent</h2>
         <p>
@@ -34,7 +33,6 @@ const page: React.FC<pageProps> = () => {
           encapsulates their brand&rsquo;s story and mission.
         </p>
       </section>
-
       <section>
         <h2>Canada</h2>
         <button>See location</button>
@@ -45,7 +43,6 @@ const page: React.FC<pageProps> = () => {
         <h2>United Kingdom</h2>
         <button>See location</button>
       </section>
-
       <section>
         <h2>The real deal</h2>
         <p>
@@ -62,7 +59,7 @@ const page: React.FC<pageProps> = () => {
           take action and drive real results.
         </p>
       </section>
-    </>
+    </main>
   );
 };
 export default page;

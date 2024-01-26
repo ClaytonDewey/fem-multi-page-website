@@ -1,11 +1,11 @@
 import React from 'react';
 
-type NavigationProps = {};
+type NavbarProps = {};
 
-const Navigation: React.FC<NavigationProps> = () => {
+const Navbar: React.FC<NavbarProps> = () => {
   return (
     <nav>
-      link here...
+      {/* link here... */}
       {/* <ul>
         <li>Our Company</li>
         <li>Locations</li>
@@ -14,4 +14,4 @@ const Navigation: React.FC<NavigationProps> = () => {
     </nav>
   );
 };
-export default Navigation;
+export default Navbar;

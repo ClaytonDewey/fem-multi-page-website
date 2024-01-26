@@ -4,7 +4,8 @@ type pageProps = {};
 
 const page: React.FC<pageProps> = () => {
   return (
-    <>
+    <main className='container'>
+      {' '}
       <section>
         <h2>Contact us</h2>
         <p>
@@ -51,7 +52,6 @@ const page: React.FC<pageProps> = () => {
           <button>Submit</button>
         </form>
       </section>
-
       <section>
         <h2>Canada</h2>
         <button>See location</button>
@@ -60,7 +60,7 @@ const page: React.FC<pageProps> = () => {
         United Kingdom
         <button>See location</button>
       </section>
-    </>
+    </main>
   );
 };
 export default page;
