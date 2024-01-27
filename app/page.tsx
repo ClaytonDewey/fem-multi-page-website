@@ -29,17 +29,41 @@ export default function Home() {
       <section className='section__design'>
         <div className='section__design--web'>
           <h2>Web Design</h2>
-          <Link href='/web-design'>View Projects</Link>
+          <Link href='/web-design'>
+            View Projects{' '}
+            <Image
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='arrow'
+              width={4}
+              height={8}
+            />
+          </Link>
         </div>
 
         <div className='section__design--app'>
           <h2>App Design</h2>
-          <Link href='/app-design'>View Projects</Link>
+          <Link href='/app-design'>
+            View Projects{' '}
+            <Image
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='arrow'
+              width={4}
+              height={8}
+            />
+          </Link>
         </div>
 
         <div className='section__design--graphic'>
           <h2>Graphic Design</h2>
-          <Link href='/graphic-design'>View Projects</Link>
+          <Link href='/graphic-design'>
+            View Projects{' '}
+            <Image
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='arrow'
+              width={4}
+              height={8}
+            />
+          </Link>
         </div>
       </section>
 

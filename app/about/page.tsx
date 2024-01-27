@@ -1,20 +1,29 @@
+import Image from 'next/image';
 import React from 'react';
 
 type pageProps = {};
 
 const page: React.FC<pageProps> = () => {
   return (
-    <main className='container'>
-      <section>
-        <h2>About us</h2>
-        <p>
-          Founded in 2010, we are a creative agency that produces lasting
-          results for our clients. We&rsquo;ve partnered with many startups,
-          corporations, and nonprofits alike to craft designs that make real
-          impact. We&rsquo;re always looking forward to creating brands,
-          products, and digital experiences that connect with our clients&apos;
-          audiences.
-        </p>
+    <main className='about container'>
+      <section className='hero hero__dark section__hero'>
+        <Image
+          src='/assets/about/mobile/image-about-hero.jpg'
+          alt=''
+          width={480}
+          height={320}
+        />
+        <div className='hero__content'>
+          <h2>About us</h2>
+          <p>
+            Founded in 2010, we are a creative agency that produces lasting
+            results for our clients. We&rsquo;ve partnered with many startups,
+            corporations, and nonprofits alike to craft designs that make real
+            impact. We&rsquo;re always looking forward to creating brands,
+            products, and digital experiences that connect with our
+            clients&apos; audiences.
+          </p>
+        </div>
       </section>
       <section>
         <h2>World-class talent</h2>

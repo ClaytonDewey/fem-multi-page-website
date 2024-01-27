@@ -1,0 +1,11 @@
+@use '../util' as *;
+
+.about {
+  .hero {
+    text-align: center;
+
+    &__content {
+      padding-bottom: rem(80);
+    }
+  }
+}

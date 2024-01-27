@@ -10,24 +10,15 @@
       background-position: 0 rem(100);
       background-repeat: no-repeat;
 
-      h2 {
-        margin: 0;
-        margin-bottom: rem(14);
-        font-size: rem(32);
-        font-style: normal;
-        font-weight: 500;
-        line-height: rem(36); /* 112.5% */
-      }
-
-      p {
-        margin-bottom: rem(24);
-      }
-
       img {
         display: block;
         margin: rem(-70);
         height: auto;
         width: rem(600);
+      }
+
+      p {
+        margin-bottom: rem(24);
       }
     }
 

@@ -1,28 +1,41 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type FooterProps = {};
 
 const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className='footer container'>
-      <section>
-        <h2>Let&rsquo;s talk about your project</h2>
+      <section className='cta__contact'>
+        <h2>
+          Let&rsquo;s talk about
+          <br />
+          your project
+        </h2>
         <p>
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
         </p>
-        <button>Get in touch</button>
+        <Link href='/contact' className='btn btn__light'>
+          Get in touch
+        </Link>
       </section>
 
-      <div className='footer__logo'>
-        <Image src='/assets/logo.png' alt='logo' width='24' height='24' />
-        <h2 className='logo'>Designo</h2>
-      </div>
+      <div className='footer__about'>
+        <div className='footer__logo'>
+          <Image
+            src='/assets/shared/desktop/logo-light.png'
+            alt='logo'
+            width='197'
+            height='27'
+          />
+        </div>
 
-      <p>Our company</p>
-      <p>Locations</p>
-      <p>Contact</p>
+        <Link href='/about'>Our company</Link>
+        <Link href='/locations'>Locations</Link>
+        <Link href='/contact'>Contact</Link>
+      </div>
 
       <address>
         <h2>Designo Central Office</h2>
@@ -31,9 +44,54 @@ const Footer: React.FC<FooterProps> = () => {
         Toronto, Ontario M9C 3J5
       </address>
 
-      <h2>Contact Us (Central Office)</h2>
-      <p>P : +1 253-863-8967</p>
-      <p>M : contact@designo.co</p>
+      <div className='footer__contact'>
+        <h2>Contact Us (Central Office)</h2>
+        <p>P : +1 253-863-8967</p>
+        <p>M : contact@designo.co</p>
+      </div>
+
+      <div className='footer__social'>
+        <Link href='/'>
+          <Image
+            src='/assets/shared/desktop/icon-facebook.svg'
+            alt='Facebook'
+            height={24}
+            width={24}
+          />
+        </Link>
+        <Link href='/'>
+          <Image
+            src='/assets/shared/desktop/icon-youtube.svg'
+            alt='YouTube'
+            height={24}
+            width={24}
+          />
+        </Link>
+        <Link href='/'>
+          <Image
+            src='/assets/shared/desktop/icon-twitter.svg'
+            alt='Twitter'
+            height={24}
+            width={24}
+          />
+        </Link>
+        <Link href='/'>
+          <Image
+            src='/assets/shared/desktop/icon-pinterest.svg'
+            alt='Pinterest'
+            height={24}
+            width={24}
+          />
+        </Link>
+        <Link href='/'>
+          <Image
+            src='/assets/shared/desktop/icon-instagram.svg'
+            alt='Instagram'
+            height={24}
+            width={24}
+          />
+        </Link>
+      </div>
     </footer>
   );
 };

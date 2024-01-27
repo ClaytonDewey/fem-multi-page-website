@@ -8,8 +8,12 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <header className='header container'>
       <div className='header__logo'>
-        <Image src='/assets/logo.png' alt='logo' width='24' height='24' />
-        <h1 className='logo'>Designo</h1>
+        <Image
+          src='/assets/shared/desktop/logo-dark.png'
+          alt='logo'
+          width='197'
+          height='27'
+        />
       </div>
       <Navbar />
     </header>
