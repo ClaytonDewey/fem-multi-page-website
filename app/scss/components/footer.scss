@@ -2,15 +2,9 @@
 
 .footer {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(column, center, center);
   gap: rem(40);
-  background: var(--clr-black);
-  color: rgba(255, 255, 255, 0.5);
   text-align: center;
-  padding: rem(253) rem(24) rem(64);
 
   &__logo {
     display: flex;
@@ -25,9 +19,9 @@
     margin-inline: rem(24);
     @include flex(column, center, center);
     padding: rem(24);
-    position: absolute;
-    top: rem(-190);
-    left: 0;
+    // position: absolute;
+    // top: rem(-190);
+    // left: 0;
     height: rem(379);
     border-radius: rem(15);
     background-color: var(--clr-primary);
@@ -46,6 +40,16 @@
       line-height: rem(25); /* 166.667% */
       margin-bottom: rem(32);
     }
+  }
+
+  &__body {
+    @include flex(column, center, center);
+    gap: rem(40);
+    background: var(--clr-black);
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: rem(80) rem(24) rem(64);
+    width: 100%;
   }
 
   //
