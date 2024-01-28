@@ -1,0 +1,17 @@
+@use '../util' as *;
+
+.section {
+  &__content {
+    @include flex(column, center, center);
+    gap: rem(24);
+    padding: rem(80) rem(24);
+    overflow: hidden;
+    // background: hsla(11, 100%, 80%, 0.2)
+    //   url('/assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+    background-position: top right;
+    font-size: rem(15);
+    font-style: normal;
+    font-weight: 400;
+    line-height: rem(25); /* 166.667% */
+  }
+}

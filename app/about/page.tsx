@@ -16,7 +16,7 @@ const page: React.FC<pageProps> = () => {
             height={320}
           />
         </div>
-        <div className='hero__content'>
+        <div className='section__content'>
           <h2>About us</h2>
           <p>
             Founded in 2010, we are a creative agency that produces lasting
@@ -39,7 +39,7 @@ const page: React.FC<pageProps> = () => {
           />
         </div>
 
-        <div className='section__talent--content'>
+        <div className='section__content'>
           <h2>World-class talent</h2>
           <p>
             We are a crew of strategists, problem-solvers, and technologists.
@@ -69,7 +69,7 @@ const page: React.FC<pageProps> = () => {
             height={320}
           />
         </div>
-        <div className='section__talent--content'>
+        <div className='section__content'>
           <h2>The real deal</h2>
           <p>
             As strategic partners in our clients&rsquo; businesses, we are ready

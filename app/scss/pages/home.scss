@@ -91,14 +91,7 @@
     }
 
     &__about {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: rem(80);
-      padding: rem(120) rem(24) 0;
-
-      > div {
+      .section__content {
         text-align: center;
 
         .icon__container {
