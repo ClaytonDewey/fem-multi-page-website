@@ -2,13 +2,11 @@
 
 .section {
   &__hero {
-    @include flex(column, center, center);
     background: var(--clr-primary);
     color: var(--clr-white);
 
     h2 {
       margin: 0;
-      margin-bottom: rem(14);
       font-size: rem(32);
       font-style: normal;
       font-weight: 500;

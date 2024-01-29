@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className='home container'>
-      <section className='section__hero'>
+      <section className='section section__hero'>
         <div className='section__content section__content--hero'>
           <h2>Award-winning custom designs and digital branding solutions</h2>
           <p>
@@ -12,21 +12,21 @@ export default function Home() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <div className='btn__container'>
-            <Link href='/about' className='btn btn__light'>
-              Learn more
-            </Link>
-          </div>
+          <Link href='/about' className='btn btn__light'>
+            Learn more
+          </Link>
         </div>
-        <Image
-          alt='phone'
-          src='/assets/home/desktop/image-hero-phone.png'
-          height={1000}
-          width={600}
-        />
+        <div>
+          <Image
+            alt='phone'
+            src='/assets/home/desktop/image-hero-phone.png'
+            height={731}
+            width={375}
+          />
+        </div>
       </section>
 
-      <section className='section__design'>
+      <section className='section section__design'>
         <div className='section__design--web'>
           <h2>Web Design</h2>
           <Link href='/web-design'>
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='section__about'>
+      <section className='section section__about'>
         <div className='section__content'>
           <div>
             <div className='icon__container icon__container--large'>
