@@ -1,6 +1,21 @@
 @use '../util' as *;
 
 .section {
+  &__hero {
+    @include flex(column, center, center);
+    background: var(--clr-primary);
+    color: var(--clr-white);
+
+    h2 {
+      margin: 0;
+      margin-bottom: rem(14);
+      font-size: rem(32);
+      font-style: normal;
+      font-weight: 500;
+      line-height: rem(36); /* 112.5% */
+    }
+  }
+
   &__content {
     @include flex(column, center, center);
     gap: rem(24);
@@ -13,5 +28,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: rem(25); /* 166.667% */
+
+    &--hero {
+      // background: url('/assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+    }
   }
 }

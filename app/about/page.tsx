@@ -7,8 +7,8 @@ type pageProps = {};
 const page: React.FC<pageProps> = () => {
   return (
     <main className='about container'>
-      <section className='hero hero__dark section__hero'>
-        <div className='hero__header'>
+      <section className='section__hero'>
+        <div className='section__header'>
           <Image
             src='/assets/about/mobile/image-about-hero.jpg'
             alt=''

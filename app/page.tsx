@@ -4,8 +4,8 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className='home container'>
-      <section className='hero hero__dark section__hero'>
-        <div className='hero__content'>
+      <section className='section__hero'>
+        <div className='section__content section__content--hero'>
           <h2>Award-winning custom designs and digital branding solutions</h2>
           <p>
             With over 10 years in the industry, we are experienced in creating
