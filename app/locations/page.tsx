@@ -10,7 +10,6 @@ const page: React.FC<pageProps> = () => {
         <h2>Canada</h2>
         <h3>Designo Central Office</h3>
         <address>
-          {' '}
           3886 Wellington Street
           <br />
           Toronto, Ontario M9C 3J5

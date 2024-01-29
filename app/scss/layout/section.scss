@@ -4,31 +4,19 @@
   &__hero {
     background: var(--clr-primary);
     color: var(--clr-white);
-
-    h2 {
-      margin: 0;
-      font-size: rem(32);
-      font-style: normal;
-      font-weight: 500;
-      line-height: rem(36); /* 112.5% */
-    }
   }
 
   &__content {
     @include flex(column, center, center);
     gap: rem(24);
-    padding: rem(80) rem(24);
+    padding: rem(120) rem(24);
     overflow: hidden;
-    // background: hsla(11, 100%, 80%, 0.2)
-    //   url('/assets/about/mobile/bg-pattern-hero-about-mobile.svg');
     background-position: top right;
-    font-size: rem(15);
-    font-style: normal;
-    font-weight: 400;
-    line-height: rem(25); /* 166.667% */
 
     &--hero {
-      // background: url('/assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+      position: relative;
+      padding-block: rem(80);
+      z-index: 2;
     }
   }
 }

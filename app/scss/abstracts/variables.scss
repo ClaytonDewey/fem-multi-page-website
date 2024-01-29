@@ -18,13 +18,14 @@
   --ff-mono: 'Source Code Pro', monospace;
   --ff-serif: Cambria, Cochin, Georgia, serif;
 
-  // Font-sizes
-  --fs-xlarge: #{rem(48)};
-  --fs-large: #{rem(40)};
+  // Font-sizes - Mobile
+  --fs-xxl: #{rem(32)};
+  --fs-xl: #{rem(28)};
+  --fs-large: #{rem(24)};
   --fs-med: #{rem(20)};
   --fs-reg: #{rem(16)};
-  --fs-small: #{rem(12)};
-  --fs-xsmall: #{rem(11)};
+  --fs-small: #{rem(15)};
+  --fs-xsmall: #{rem(14)};
 
   // Flexbox gap/columns
   --gap: #{rem(20)};

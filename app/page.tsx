@@ -30,7 +30,7 @@ export default function Home() {
         <div className='section__design--web'>
           <h2>Web Design</h2>
           <Link href='/web-design'>
-            View Projects{' '}
+            View Projects
             <Image
               src='/assets/shared/desktop/icon-right-arrow.svg'
               alt='arrow'
@@ -43,7 +43,7 @@ export default function Home() {
         <div className='section__design--app'>
           <h2>App Design</h2>
           <Link href='/app-design'>
-            View Projects{' '}
+            View Projects
             <Image
               src='/assets/shared/desktop/icon-right-arrow.svg'
               alt='arrow'
@@ -56,7 +56,7 @@ export default function Home() {
         <div className='section__design--graphic'>
           <h2>Graphic Design</h2>
           <Link href='/graphic-design'>
-            View Projects{' '}
+            View Projects
             <Image
               src='/assets/shared/desktop/icon-right-arrow.svg'
               alt='arrow'

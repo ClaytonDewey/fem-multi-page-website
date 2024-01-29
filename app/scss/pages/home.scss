@@ -84,6 +84,11 @@
           url('/assets/home/mobile/image-graphic-design.jpg');
         color: var(--clr-white);
       }
+
+      img {
+        display: inline-block;
+        margin-left: rem(16);
+      }
     }
 
     &__about {

@@ -3,7 +3,7 @@
 .footer {
   position: relative;
   @include flex(column, center, center);
-  gap: rem(40);
+  // gap: rem(40);
   text-align: center;
 
   &__logo {
@@ -14,31 +14,30 @@
     padding-bottom: rem(32);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-
-  .cta__contact {
-    margin-inline: rem(24);
-    @include flex(column, center, center);
-    padding: rem(24);
-    // position: absolute;
-    // top: rem(-190);
-    // left: 0;
-    height: rem(379);
-    border-radius: rem(15);
-    background-color: var(--clr-primary);
-    color: var(--clr-white);
-
-    h2 {
-      font-size: rem(32);
-      font-style: normal;
-      font-weight: 500;
-      line-height: rem(36); /* 112.5% */
+  .cta {
+    &__wrapper {
+      background: linear-gradient(
+        to top,
+        var(--clr-black) 50%,
+        var(--clr-white) 50%,
+        var(--clr-white) 100%
+      );
     }
-    p {
-      font-size: rem(15);
-      font-style: normal;
-      font-weight: 400;
-      line-height: rem(25); /* 166.667% */
-      margin-bottom: rem(32);
+    &__contact {
+      margin-inline: rem(24);
+      @include flex(column, center, center);
+      padding: rem(24);
+      // position: absolute;
+      // top: rem(-190);
+      // left: 0;
+      height: rem(380);
+      border-radius: rem(15);
+      background-color: var(--clr-primary);
+      color: var(--clr-white);
+
+      p {
+        margin-bottom: rem(32);
+      }
     }
   }
 
@@ -48,7 +47,7 @@
     background: var(--clr-black);
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    padding: rem(80) rem(24) rem(64);
+    padding: rem(64) rem(24) rem(64);
     width: 100%;
   }
 
