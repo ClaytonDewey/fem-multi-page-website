@@ -7,7 +7,7 @@ type HeaderProps = {};
 
 const Header: React.FC<HeaderProps> = () => {
   return (
-    <header className='header container'>
+    <header className='header'>
       <div className='header__logo'>
         <Link href='/'>
           <Image

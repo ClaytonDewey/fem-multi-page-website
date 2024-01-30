@@ -7,6 +7,10 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: rem(36); /* 112.5% */
+
+  @include breakpoint(medium) {
+    line-height: rem(48);
+  }
 }
 
 p {
@@ -14,4 +18,9 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: rem(25);
+
+  @include breakpoint(medium) {
+    font-size: var(--fs-reg);
+    line-height: rem(26);
+  }
 }
