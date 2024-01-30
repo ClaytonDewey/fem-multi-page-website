@@ -12,7 +12,7 @@
       gap: rem(48);
 
       h2 {
-        font-size: rem(20);
+        font-size: var(--fs-title-sm);
         font-style: normal;
         font-weight: 500;
         line-height: rem(26); /* 130% */

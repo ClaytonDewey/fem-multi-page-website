@@ -37,7 +37,7 @@
         border-radius: rem(15);
 
         h2 {
-          font-size: rem(28);
+          font-size: var(--fs-title-lg);
           font-style: normal;
           font-weight: 500;
           line-height: rem(36); /* 128.571% */

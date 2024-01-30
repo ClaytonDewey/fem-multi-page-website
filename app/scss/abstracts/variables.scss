@@ -19,17 +19,42 @@
   --ff-serif: Cambria, Cochin, Georgia, serif;
 
   // Font-sizes - Mobile
-  --fs-xxl: #{rem(32)};
-  --fs-xl: #{rem(28)};
-  --fs-large: #{rem(24)};
-  --fs-med: #{rem(20)};
+  --fs-title-xl: #{rem(32)};
+  --fs-title-lg: #{rem(28)};
+  --fs-title: #{rem(24)};
+  --fs-title-sm: #{rem(20)};
   --fs-reg: #{rem(16)};
   --fs-small: #{rem(15)};
-  --fs-xsmall: #{rem(14)};
+  --fs-xs: #{rem(14)};
 
   // Flexbox gap/columns
   --gap: #{rem(20)};
   --columns: 2;
 
   --transition: all 0.25s ease-in-out;
+
+  @include breakpoint(medium) {
+    // Font-sizes - Tablet
+    --fs-title-xl: #{rem(48)};
+    --fs-title-lg: #{rem(40)};
+  }
 }
+
+/* 
+https://www.joshwcomeau.com/css/css-variables-for-react-devs/
+html {
+  --min-tap-target-height: 32px;
+  @media (pointer: coarse) {
+    --min-tap-target-height: 48px;
+  }
+}
+
+const Button = styled.button`
+  min-height: var(--min-tap-target-height);
+`;
+const TextInput = styled.input`
+  min-height: var(--min-tap-target-height);
+`;
+
+The "Principle of Least Knowledge" is the idea that code should only have access to stuff directly adjacent to it, and not "reach over" into a totally different part of the codebase. I feel like if we squint a little, that same idea applies here.
+*/
