@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className='home container'>
+    <main className='container'>
       <section className='section section__hero'>
         <div className='section__content section__content--hero'>
           <h2>Award-winning custom designs and digital branding solutions</h2>
@@ -27,7 +27,7 @@ export default function Home() {
       </section>
 
       <section className='section section__design'>
-        <div className='section__design--web'>
+        <div className='section__design--item'>
           <h2>Web Design</h2>
           <Link href='/web-design'>
             View Projects
@@ -40,7 +40,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className='section__design--app'>
+        <div className='section__design--item'>
           <h2>App Design</h2>
           <Link href='/app-design'>
             View Projects
@@ -53,7 +53,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className='section__design--graphic'>
+        <div className='section__design--item'>
           <h2>Graphic Design</h2>
           <Link href='/graphic-design'>
             View Projects
@@ -69,7 +69,7 @@ export default function Home() {
 
       <section className='section section__about'>
         <div className='section__content'>
-          <div>
+          <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
               <Image
                 src='/assets/home/desktop/illustration-passionate.svg'
@@ -86,7 +86,8 @@ export default function Home() {
               and technology into exciting new solutions.
             </p>
           </div>
-          <div>
+
+          <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
               <Image
                 src='/assets/home/desktop/illustration-resourceful.svg'
@@ -105,7 +106,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div>
+          <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
               <Image
                 src='/assets/home/desktop/illustration-friendly.svg'
