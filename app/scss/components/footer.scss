@@ -49,6 +49,11 @@
     text-align: center;
     padding: rem(64) rem(24) rem(64);
     width: 100%;
+
+    h2 {
+      font-size: var(--fs-reg);
+      font-weight: 700;
+    }
   }
 
   //

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import logoImg from '../../public/assets/shared/desktop/logo-light.png';
 
 type FooterProps = {};
 
@@ -27,12 +28,7 @@ const Footer: React.FC<FooterProps> = () => {
       <div className='footer__body'>
         <div className='footer__about'>
           <div className='footer__logo'>
-            <Image
-              src='/assets/shared/desktop/logo-light.png'
-              alt='logo'
-              width='197'
-              height='27'
-            />
+            <Image src={logoImg} alt='logo' width='197' height='27' />
           </div>
 
           <Link href='/about'>Our company</Link>

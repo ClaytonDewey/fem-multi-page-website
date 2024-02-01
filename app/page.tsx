@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import phoneImg from '../public/assets/home/desktop/image-hero-phone.png';
+import passionateImg from '../public/assets/home/desktop/illustration-passionate.svg';
+import resourcefulImg from '../public/assets/home/desktop/illustration-resourceful.svg';
+import friendlyImg from '../public/assets/home/desktop/illustration-friendly.svg';
 
 const Home = () => {
   return (
@@ -17,113 +21,48 @@ const Home = () => {
           </Link>
         </div>
         <div>
-          <Image
-            alt='phone'
-            src='/assets/home/desktop/image-hero-phone.png'
-            height={731}
-            width={375}
-          />
+          <Image alt='phone' src={phoneImg} role='presentation' />
         </div>
       </section>
 
       <section className='section section__design'>
-        <div className='section__design--item'>
-          <div className='image__container'>
-            <picture>
-              <source
-                media='(min-width: 69.4375em)'
-                srcSet='/assets/home/desktop/image-web-design-large.jpg'
-              />
-              <source
-                media='(min-width: 48em)'
-                srcSet='/assets/home/tablet/image-web-design.jpg'
-              />
-              <Image
-                width={327}
-                height={250}
-                alt=''
-                src='/assets/home/mobile/image-web-design.jpg'
-              />
-            </picture>
-          </div>
-          <div className='section__design--content'>
-            <h2>Web Design</h2>
-            <Link href='/web-design'>
-              View Projects
-              <Image
-                src='/assets/shared/desktop/icon-right-arrow.svg'
-                alt='arrow'
-                width={4}
-                height={8}
-              />
-            </Link>
-          </div>
+        <div className='section__design--item web'>
+          <h2>Web Design</h2>
+          <Link href='/web-design'>
+            View Projects
+            <Image
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='arrow'
+              width={4}
+              height={8}
+            />
+          </Link>
         </div>
 
-        <div className='section__design--item'>
-          <div className='image__container'>
-            <picture>
-              <source
-                media='(min-width: 69.4375em)'
-                srcSet='/assets/home/desktop/image-app-design.jpg'
-              />
-              <source
-                media='(min-width: 48em)'
-                srcSet='/assets/home/tablet/image-app-design.jpg'
-              />
-              <Image
-                width={327}
-                height={250}
-                alt=''
-                src='/assets/home/mobile/image-app-design.jpg'
-              />
-            </picture>
-          </div>
-          <div className='section__design--content'>
-            <h2>App Design</h2>
-            <Link href='/app-design'>
-              View Projects
-              <Image
-                src='/assets/shared/desktop/icon-right-arrow.svg'
-                alt='arrow'
-                width={4}
-                height={8}
-              />
-            </Link>
-          </div>
+        <div className='section__design--item app'>
+          <h2>App Design</h2>
+          <Link href='/app-design'>
+            View Projects
+            <Image
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='arrow'
+              width={4}
+              height={8}
+            />
+          </Link>
         </div>
 
-        <div className='section__design--item'>
-          <div className='image__container'>
-            <picture>
-              <source
-                media='(min-width: 69.4375em)'
-                srcSet='/assets/home/desktop/image-graphic-design.jpg'
-              />
-              <source
-                media='(min-width: 48em)'
-                srcSet='/assets/home/tablet/image-graphic-design.jpg'
-              />
-              <Image
-                width={327}
-                height={250}
-                alt=''
-                src='/assets/home/mobile/image-graphic-design.jpg'
-              />
-            </picture>
-          </div>
-          <div className='section__design--content'>
-            <h2>Graphic Design</h2>
-            <Link href='/graphic-design'>
-              View Projects
-              <Image
-                src='/assets/shared/desktop/icon-right-arrow.svg'
-                alt='arrow'
-                width={4}
-                height={8}
-              />
-            </Link>
-          </div>
+        <div className='section__design--item graphic'>
+          <h2>Graphic Design</h2>
+          <Link href='/graphic-design'>
+            View Projects
+            <Image
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='arrow'
+              width={4}
+              height={8}
+            />
+          </Link>
         </div>
       </section>
 
@@ -131,13 +70,7 @@ const Home = () => {
         <div className='section__content'>
           <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
-              <Image
-                src='/assets/home/desktop/illustration-passionate.svg'
-                role='presentation'
-                alt=''
-                height={202}
-                width={202}
-              />
+              <Image src={passionateImg} role='presentation' alt='' />
             </div>
             <h2>Passionate</h2>
             <p>
@@ -149,13 +82,7 @@ const Home = () => {
 
           <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
-              <Image
-                src='/assets/home/desktop/illustration-resourceful.svg'
-                role='presentation'
-                alt=''
-                height={202}
-                width={202}
-              />
+              <Image src={resourcefulImg} role='presentation' alt='' />
             </div>
             <h2>Resourceful</h2>
             <p>
@@ -168,13 +95,7 @@ const Home = () => {
 
           <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
-              <Image
-                src='/assets/home/desktop/illustration-friendly.svg'
-                role='presentation'
-                alt=''
-                height={202}
-                width={202}
-              />
+              <Image src={friendlyImg} role='presentation' alt='' />
             </div>
             <h2>Friendly</h2>
             <p>

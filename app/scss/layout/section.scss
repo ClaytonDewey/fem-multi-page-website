@@ -36,7 +36,12 @@
     padding: rem(120) rem(24) 0;
 
     &--item {
-      position: relative;
+      @include flex(column, center, center);
+      gap: rem(12);
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      color: var(--clr-white);
       background-size: cover;
       background-repeat: no-repeat;
       background-color: var(--clr-black);
@@ -61,17 +66,33 @@
           margin-left: rem(16);
         }
       }
-    }
-
-    &--content {
-      @include flex(column, center, center);
-      gap: rem(12);
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-      color: var(--clr-white);
-      position: relative;
-      // z-index: 1;
+      &.web {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('/assets/home/mobile/image-web-design.jpg');
+        color: var(--clr-white);
+      }
+      &.app {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('/assets/home/mobile/image-app-design.jpg');
+        color: var(--clr-white);
+      }
+      &.graphic {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('/assets/home/mobile/image-graphic-design.jpg');
+        color: var(--clr-white);
+      }
     }
   }
 
@@ -84,7 +105,7 @@
       }
 
       h2 {
-        font-size: rem(20);
+        font-size: var(--fs-title-sm);
         font-style: normal;
         font-weight: 500;
         line-height: rem(26); /* 130% */
@@ -94,7 +115,7 @@
       }
 
       p {
-        font-size: rem(16);
+        font-size: var(--fs-reg);
         font-style: normal;
         font-weight: 400;
         line-height: rem(26); /* 162.5% */
@@ -115,21 +136,5 @@
     &__content {
       padding: rem(60);
     }
-  }
-}
-
-.image__container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-  source,
-  img {
-    display: block;
-    max-width: 100%;
-    width: auto;
-    height: auto;
   }
 }
