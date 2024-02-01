@@ -36,16 +36,14 @@
     padding: rem(120) rem(24) 0;
 
     &--item {
-      @include flex(column, center, center);
-      gap: rem(12);
+      position: relative;
       background-size: cover;
       background-repeat: no-repeat;
       background-color: var(--clr-black);
       height: rem(250);
       width: 100%;
       border-radius: rem(15);
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-      color: var(--clr-white);
+      overflow: hidden;
 
       h2 {
         letter-spacing: rem(1.4);
@@ -63,6 +61,17 @@
           margin-left: rem(16);
         }
       }
+    }
+
+    &--content {
+      @include flex(column, center, center);
+      gap: rem(12);
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      color: var(--clr-white);
+      position: relative;
+      // z-index: 1;
     }
   }
 
@@ -106,5 +115,21 @@
     &__content {
       padding: rem(60);
     }
+  }
+}
+
+.image__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  source,
+  img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
   }
 }
