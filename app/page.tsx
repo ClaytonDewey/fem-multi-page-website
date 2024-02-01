@@ -20,9 +20,8 @@ const Home = () => {
             Learn more
           </Link>
         </div>
-        <div>
-          <Image alt='phone' src={phoneImg} role='presentation' />
-        </div>
+
+        <Image alt='phone' src={phoneImg} role='presentation' />
       </section>
 
       <section className='section section__design'>
@@ -72,37 +71,43 @@ const Home = () => {
             <div className='icon__container icon__container--large'>
               <Image src={passionateImg} role='presentation' alt='' />
             </div>
-            <h2>Passionate</h2>
-            <p>
-              Each project starts with an in-depth brand research to ensure we
-              only create products that serve a purpose. We merge art, design,
-              and technology into exciting new solutions.
-            </p>
+            <div className='section__about--body'>
+              <h2>Passionate</h2>
+              <p>
+                Each project starts with an in-depth brand research to ensure we
+                only create products that serve a purpose. We merge art, design,
+                and technology into exciting new solutions.
+              </p>
+            </div>
           </div>
 
           <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
               <Image src={resourcefulImg} role='presentation' alt='' />
             </div>
-            <h2>Resourceful</h2>
-            <p>
-              Everything that we do has a strategic purpose. We use an agile
-              approach in all of our projects and value customer collaboration.
-              It guarantees superior results that fulfill our clients&rsquo;
-              needs.
-            </p>
+            <div className='section__about--body'>
+              <h2>Resourceful</h2>
+              <p>
+                Everything that we do has a strategic purpose. We use an agile
+                approach in all of our projects and value customer
+                collaboration. It guarantees superior results that fulfill our
+                clients&rsquo; needs.
+              </p>
+            </div>
           </div>
 
           <div className='section__about--item'>
             <div className='icon__container icon__container--large'>
               <Image src={friendlyImg} role='presentation' alt='' />
             </div>
-            <h2>Friendly</h2>
-            <p>
-              We are a group of enthusiastic folks who know how to put people
-              first. Our success depends on our customers, and we strive to give
-              them the best experience a company can provide.
-            </p>
+            <div className='section__about--body'>
+              <h2>Friendly</h2>
+              <p>
+                We are a group of enthusiastic folks who know how to put people
+                first. Our success depends on our customers, and we strive to
+                give them the best experience a company can provide.
+              </p>
+            </div>
           </div>
         </div>
       </section>

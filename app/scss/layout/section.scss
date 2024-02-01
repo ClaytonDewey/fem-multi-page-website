@@ -5,14 +5,16 @@
     background: var(--clr-primary);
     color: var(--clr-white);
     text-align: center;
-    max-height: rem(843);
+    height: rem(843);
     overflow: hidden;
 
     img {
       display: block;
-      margin: rem(-119) auto;
-      height: auto;
-      width: rem(375);
+      margin: rem(-170) auto;
+      aspect-ratio: 624 / 913;
+      // height: auto;
+      width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -38,7 +40,6 @@
     &--item {
       @include flex(column, center, center);
       gap: rem(12);
-      height: 100%;
       width: 100%;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       color: var(--clr-white);
@@ -56,6 +57,7 @@
       }
 
       a {
+        font-size: var(--fs-small);
         letter-spacing: rem(5);
         text-transform: uppercase;
         color: var(--clr-white);
@@ -135,6 +137,18 @@
 
     &__content {
       padding: rem(60);
+    }
+
+    &__design {
+      padding-inline: 0;
+
+      &--item {
+        height: rem(200);
+
+        h2 {
+          font-size: var(--fs-title-lg);
+        }
+      }
     }
   }
 }
