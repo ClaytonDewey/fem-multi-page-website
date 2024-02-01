@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
+const Home = () => {
   return (
     <main className='container'>
       <section className='section section__hero'>
@@ -185,6 +185,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* <img src='iceland-md.jpg' srcSet='iceland-sm.jpg 640w, icland-md.jpg 1280w, iceland-lg.jpg 1920' sizes='(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 70vw' /> */}
     </main>
   );
-}
+};
+
+export default Home;
