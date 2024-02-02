@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logoImg from '../../public/assets/shared/desktop/logo-light.png';
+import ctaImg from '../../public/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
+import { Navbar } from '.';
 
 type FooterProps = {};
 
@@ -10,6 +12,7 @@ const Footer: React.FC<FooterProps> = () => {
     <footer className='footer'>
       <section className='cta__wrapper'>
         <div className='cta__contact'>
+          <Image src={ctaImg} alt='' role='' className='cta__bg' />
           <h2>
             Let&rsquo;s talk about
             <br />
@@ -31,9 +34,7 @@ const Footer: React.FC<FooterProps> = () => {
             <Image src={logoImg} alt='logo' width='197' height='27' />
           </div>
 
-          <Link href='/about'>Our company</Link>
-          <Link href='/locations'>Locations</Link>
-          <Link href='/contact'>Contact</Link>
+          <Navbar />
         </div>
 
         <address>

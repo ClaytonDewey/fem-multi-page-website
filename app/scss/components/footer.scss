@@ -23,7 +23,10 @@
         var(--clr-white) 100%
       );
     }
+
     &__contact {
+      position: relative;
+      overflow: hidden;
       margin-inline: rem(24);
       @include flex(column, center, center);
       padding: rem(24);
@@ -40,6 +43,12 @@
         margin-bottom: rem(30);
       }
     }
+
+    &__bg {
+      position: absolute;
+      top: rem(-100);
+      right: rem(-25);
+    }
   }
 
   &__body {
@@ -54,6 +63,7 @@
     h2 {
       font-size: var(--fs-reg);
       font-weight: 700;
+      line-height: rem(26);
     }
   }
 

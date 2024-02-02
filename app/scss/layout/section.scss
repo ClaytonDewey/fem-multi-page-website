@@ -12,7 +12,6 @@
       display: block;
       margin: rem(-170) auto;
       aspect-ratio: 624 / 913;
-      // height: auto;
       width: 100%;
       object-fit: cover;
     }
@@ -69,29 +68,17 @@
         }
       }
       &.web {
-        background-image: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
+        background-image: var(--gradient-bg),
           url('/assets/home/mobile/image-web-design.jpg');
         color: var(--clr-white);
       }
       &.app {
-        background-image: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
+        background-image: var(--gradient-bg),
           url('/assets/home/mobile/image-app-design.jpg');
         color: var(--clr-white);
       }
       &.graphic {
-        background-image: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
+        background-image: var(--gradient-bg),
           url('/assets/home/mobile/image-graphic-design.jpg');
         color: var(--clr-white);
       }
@@ -102,10 +89,6 @@
     .section__content {
       text-align: center;
       gap: rem(80);
-
-      .icon__container {
-        margin-bottom: rem(48);
-      }
 
       h2 {
         font-size: var(--fs-title-sm);
@@ -124,12 +107,21 @@
         line-height: rem(26); /* 162.5% */
       }
     }
+
+    &--item {
+      @include flex(column, center, center);
+      gap: rem(48);
+    }
   }
 
   // First media query
   @include breakpoint(medium) {
     &__hero {
       border-radius: rem(15);
+
+      img {
+        margin-top: rem(-120);
+      }
 
       p {
         padding-inline: rem(70);
@@ -148,6 +140,43 @@
 
         h2 {
           font-size: var(--fs-title-lg);
+        }
+      }
+
+      &--item {
+        &.web {
+          background-image: var(--gradient-bg),
+            url('/assets/home/tablet/image-web-design.jpg');
+          color: var(--clr-white);
+        }
+        &.app {
+          background-image: var(--gradient-bg),
+            url('/assets/home/tablet/image-app-design.jpg');
+          color: var(--clr-white);
+        }
+        &.graphic {
+          background-image: var(--gradient-bg),
+            url('/assets/home/tablet/image-graphic-design.jpg');
+          color: var(--clr-white);
+        }
+      }
+    }
+
+    &__about {
+      &--item {
+        flex-direction: row;
+        gap: rem(40);
+      }
+
+      &--body {
+        text-align: left;
+      }
+
+      .section__content {
+        padding-inline: 0;
+
+        h2 {
+          margin-bottom: rem(10);
         }
       }
     }

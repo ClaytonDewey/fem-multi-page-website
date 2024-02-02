@@ -1,0 +1,23 @@
+@use '../util' as *;
+
+.navbar {
+  ul {
+    @include flex(row, center, center);
+    gap: rem(40);
+    list-style: none;
+
+    li {
+      //
+    }
+
+    a {
+      text-decoration: none;
+      font-size: var(--fs-xsmall);
+      color: currentColor;
+      line-height: rem(14);
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: rem(2);
+    }
+  }
+}
