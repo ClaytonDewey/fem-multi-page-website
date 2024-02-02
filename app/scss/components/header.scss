@@ -12,8 +12,16 @@
     gap: rem(16);
   }
 
+  .navbar {
+    display: none;
+  }
+
   @include breakpoint(medium) {
     height: rem(155);
     padding-inline: rem(40);
+
+    .navbar {
+      display: block;
+    }
   }
 }

@@ -3,16 +3,16 @@
 .navbar {
   ul {
     @include flex(row, center, center);
-    gap: rem(40);
+    gap: rem(42);
     list-style: none;
 
     li {
-      //
+      line-height: rem(14);
     }
 
     a {
       text-decoration: none;
-      font-size: var(--fs-xsmall);
+      font-size: var(--fs-xs);
       color: currentColor;
       line-height: rem(14);
       text-transform: uppercase;

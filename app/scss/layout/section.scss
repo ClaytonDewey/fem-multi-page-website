@@ -6,15 +6,8 @@
     color: var(--clr-white);
     text-align: center;
     height: rem(843);
+    position: relative;
     overflow: hidden;
-
-    img {
-      display: block;
-      margin: rem(-170) auto;
-      aspect-ratio: 624 / 913;
-      width: 100%;
-      object-fit: cover;
-    }
   }
 
   &__content {
@@ -51,7 +44,7 @@
       overflow: hidden;
 
       h2 {
-        letter-spacing: rem(1.4);
+        letter-spacing: rem(2);
         text-transform: uppercase;
       }
 
@@ -86,26 +79,26 @@
   }
 
   &__about {
-    .section__content {
-      text-align: center;
-      gap: rem(80);
+    @include flex(column, center, center);
+    gap: rem(40);
+    padding-top: rem(120);
+    text-align: center;
 
-      h2 {
-        font-size: var(--fs-title-sm);
-        font-style: normal;
-        font-weight: 500;
-        line-height: rem(26); /* 130% */
-        letter-spacing: rem(5);
-        text-transform: uppercase;
-        margin-bottom: rem(32);
-      }
+    h2 {
+      font-size: var(--fs-title-sm);
+      font-style: normal;
+      font-weight: 500;
+      line-height: rem(26); /* 130% */
+      letter-spacing: rem(5);
+      text-transform: uppercase;
+      margin-bottom: rem(32);
+    }
 
-      p {
-        font-size: var(--fs-reg);
-        font-style: normal;
-        font-weight: 400;
-        line-height: rem(26); /* 162.5% */
-      }
+    p {
+      font-size: var(--fs-reg);
+      font-style: normal;
+      font-weight: 400;
+      line-height: rem(26); /* 162.5% */
     }
 
     &--item {
@@ -118,10 +111,6 @@
   @include breakpoint(medium) {
     &__hero {
       border-radius: rem(15);
-
-      img {
-        margin-top: rem(-120);
-      }
 
       p {
         padding-inline: rem(70);

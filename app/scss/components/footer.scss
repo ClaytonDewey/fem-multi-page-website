@@ -3,17 +3,40 @@
 .footer {
   position: relative;
   @include flex(column, center, center);
-  // gap: rem(40);
   text-align: center;
+  color: rgba(255, 255, 255, 0.5);
 
   &__logo {
-    display: flex;
-    justify-content: center;
-
-    gap: rem(16);
+    display: block;
+    margin-bottom: rem(32);
     padding-bottom: rem(32);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+
+    img {
+      margin: auto;
+    }
   }
+
+  &__nav {
+    @include flex(column, center, center);
+    color: var(--clr-white);
+
+    .navbar {
+      ul {
+        flex-direction: column;
+        gap: rem(32);
+
+        li {
+          line-height: rem(14);
+          a {
+            color: currentColor;
+          }
+        }
+      }
+    }
+  }
+
   .cta {
     &__wrapper {
       background: linear-gradient(
@@ -42,12 +65,16 @@
       p {
         margin-bottom: rem(30);
       }
+
+      &--body {
+        z-index: 2;
+      }
     }
 
     &__bg {
       position: absolute;
-      top: rem(-100);
-      right: rem(-25);
+      bottom: -20%;
+      right: -100%;
     }
   }
 
@@ -55,7 +82,6 @@
     @include flex(column, center, center);
     gap: rem(40);
     background: var(--clr-black);
-    color: rgba(255, 255, 255, 0.5);
     text-align: center;
     padding: rem(64) rem(24) rem(64);
     width: 100%;
@@ -99,4 +125,35 @@
       display: block;
     }
   }
+
+  @include breakpoint(medium) {
+    .cta {
+      &__wrapper {
+        background: linear-gradient(
+          to top,
+          var(--clr-black) 25%,
+          var(--clr-white) 25%,
+          var(--clr-white) 100%
+        );
+      }
+
+      &__contact {
+        height: rem(350);
+      }
+
+      &__bg {
+        bottom: initial;
+        right: initial;
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
 }
+
+/* 
+
+    padding-bottom: rem(32);
+
+
+*/
