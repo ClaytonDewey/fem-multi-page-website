@@ -27,16 +27,17 @@
       margin-inline: rem(24);
       @include flex(column, center, center);
       padding: rem(24);
-      // position: absolute;
-      // top: rem(-190);
-      // left: 0;
       height: rem(380);
       border-radius: rem(15);
       background-color: var(--clr-primary);
       color: var(--clr-white);
 
+      h2 {
+        margin-bottom: rem(20);
+      }
+
       p {
-        margin-bottom: rem(32);
+        margin-bottom: rem(30);
       }
     }
   }
