@@ -6,21 +6,22 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
 
-  &__logo {
-    display: block;
-    margin-bottom: rem(32);
-    padding-bottom: rem(32);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-
-    img {
-      margin: auto;
-    }
-  }
-
   &__nav {
     @include flex(column, center, center);
     color: var(--clr-white);
+    width: 100%;
+
+    &--logo {
+      display: block;
+      margin-bottom: rem(32);
+      padding-bottom: rem(32);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      width: 100%;
+
+      img {
+        margin: auto;
+      }
+    }
 
     .navbar {
       ul {
@@ -97,22 +98,6 @@
   //
   //
   //
-  &__about {
-    @include flex(column, stretch, center);
-    gap: rem(32);
-    width: 100%;
-
-    a {
-      color: var(--clr-white);
-      text-decoration: none;
-      font-size: var(--fs-xs);
-      font-style: normal;
-      font-weight: 400;
-      line-height: rem(14); /* 100% */
-      letter-spacing: rem(2);
-      text-transform: uppercase;
-    }
-  }
   address {
     font-style: normal;
   }

@@ -81,7 +81,7 @@
   &__about {
     @include flex(column, center, center);
     gap: rem(40);
-    padding-top: rem(120);
+    padding-block: rem(120);
     text-align: center;
 
     h2 {

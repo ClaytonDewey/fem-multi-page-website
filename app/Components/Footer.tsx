@@ -31,14 +31,18 @@ const Footer: React.FC<FooterProps> = () => {
       </section>
 
       <div className='footer__body'>
-        <div className='footer__about'>
-          <div className='footer__nav'>
-            <Link href='/' className='footer__logo'>
-              <Image src={logoImg} alt='logo' width='197' height='27' />
-              <h1 className='visually-hidden'>DESIGNO</h1>
-            </Link>
-            <Navbar />
-          </div>
+        <div className='footer__nav'>
+          <Link href='/' className='footer__nav--logo'>
+            <Image
+              src={logoImg}
+              alt='logo'
+              width='197'
+              height='27'
+              className='footer__nav--img'
+            />
+            <h1 className='visually-hidden'>DESIGNO</h1>
+          </Link>
+          <Navbar />
         </div>
 
         <address>
