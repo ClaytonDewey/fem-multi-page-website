@@ -84,7 +84,7 @@
     gap: rem(40);
     background: var(--clr-black);
     text-align: center;
-    padding: rem(64) rem(24) rem(64);
+    padding: rem(64) rem(24);
     width: 100%;
 
     h2 {
@@ -123,6 +123,7 @@
       }
 
       &__contact {
+        margin-inline: rem(39);
         height: rem(350);
       }
 
@@ -134,11 +135,34 @@
       }
     }
   }
-}
 
-/* 
-
+  &__nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: rem(32);
     padding-bottom: rem(32);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
+    &--logo {
+      display: block;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      width: auto;
 
-*/
+      img {
+        margin: auto;
+      }
+    }
+
+    .navbar {
+      ul {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__body {
+    padding: rem(80) rem(39);
+  }
+}
