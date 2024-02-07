@@ -10,25 +10,23 @@ type FooterProps = {};
 const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className='footer'>
-      {/* <div className='cta__wrapper'>
-        <div className='cta__contact'>
-          <Image src={ctaImg} alt='' role='' className='cta__bg' />
-          <div className='cta__contact--body'>
-            <h2>
-              Let&rsquo;s talk about
-              <br />
-              your project
-            </h2>
-            <p>
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
-            <Link href='/contact' className='btn btn__light'>
-              Get in touch
-            </Link>
-          </div>
+      <div className='cta'>
+        {/* <Image src={ctaImg} alt='' role='' className='cta__bg' /> */}
+        <div className='cta__contact--body'>
+          <h2>
+            Let&rsquo;s talk about
+            <br />
+            your project
+          </h2>
+          <p>
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+          <Link href='/contact' className='btn btn__light'>
+            Get in touch
+          </Link>
         </div>
-      </div> */}
+      </div>
 
       <div className='footer__nav'>
         <Link href='/' className='footer__logo'>

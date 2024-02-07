@@ -135,3 +135,22 @@
     margin-left: auto;
   }
 }
+
+.cta {
+  position: absolute;
+  top: rem(-180);
+  padding: rem(64) rem(24);
+  margin: 0 rem(24);
+  text-align: center;
+  background-color: var(--clr-primary);
+  overflow: hidden;
+  border-radius: rem(15);
+  color: var(--clr-white);
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
