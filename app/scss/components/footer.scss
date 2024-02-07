@@ -53,6 +53,7 @@
   &__body {
     @include flex(column, center, center);
     gap: rem(42);
+    width: 100%;
     line-height: rem(26);
 
     h2 {
@@ -60,6 +61,39 @@
       font-weight: 700;
       margin-bottom: 0;
       line-height: inherit;
+    }
+  }
+
+  @include breakpoint(medium) {
+    padding: rem(80) rem(39);
+    &__nav {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: rem(80);
+      padding-bottom: rem(32);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      &--logo {
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: auto;
+        border-bottom: none;
+      }
+
+      .navbar {
+        ul {
+          flex-direction: row;
+        }
+      }
+    }
+
+    &__body {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 0;
+      text-align: left;
     }
   }
 }
