@@ -10,7 +10,7 @@ type FooterProps = {};
 const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className='footer'>
-      <section className='cta__wrapper'>
+      {/* <section className='cta__wrapper'>
         <div className='cta__contact'>
           <Image src={ctaImg} alt='' role='' className='cta__bg' />
           <div className='cta__contact--body'>
@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className='footer__body'>
         <div className='footer__nav'>

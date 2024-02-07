@@ -4,7 +4,9 @@
   position: relative;
   @include flex(column, center, center);
   text-align: center;
+  background: var(--clr-black);
   color: rgba(255, 255, 255, 0.5);
+  padding: rem(65) rem(24);
 
   &__nav {
     @include flex(column, center, center);
@@ -37,73 +39,6 @@
       }
     }
   }
-
-  .cta {
-    &__wrapper {
-      background: linear-gradient(
-        to top,
-        var(--clr-black) 50%,
-        var(--clr-white) 50%,
-        var(--clr-white) 100%
-      );
-    }
-
-    &__contact {
-      position: relative;
-      overflow: hidden;
-      margin-inline: rem(24);
-      @include flex(column, center, center);
-      padding: rem(24);
-      height: rem(380);
-      border-radius: rem(15);
-      background-color: var(--clr-primary);
-      color: var(--clr-white);
-
-      h2 {
-        margin-bottom: rem(20);
-      }
-
-      p {
-        margin-bottom: rem(30);
-      }
-
-      &--body {
-        z-index: 2;
-      }
-    }
-
-    &__bg {
-      position: absolute;
-      // bottom: -20%;
-      // right: -100%;
-      object-fit: cover;
-      width: 100%;
-    }
-  }
-
-  &__body {
-    @include flex(column, center, center);
-    gap: rem(40);
-    background: var(--clr-black);
-    text-align: center;
-    padding: rem(64) rem(24);
-    width: 100%;
-
-    h2 {
-      font-size: var(--fs-reg);
-      font-weight: 700;
-      line-height: rem(26);
-    }
-  }
-
-  //
-  //
-  //
-  //
-  address {
-    font-style: normal;
-  }
-
   &__social {
     @include flex(row, center, center);
     gap: rem(16);
@@ -112,63 +47,19 @@
       display: block;
     }
   }
+  address {
+    font-style: normal;
+  }
+  &__body {
+    @include flex(column, center, center);
+    gap: rem(42);
+    line-height: rem(26);
 
-  @include breakpoint(medium) {
-    .cta {
-      &__wrapper {
-        background: linear-gradient(
-          to top,
-          var(--clr-black) 25%,
-          var(--clr-white) 25%,
-          var(--clr-white) 100%
-        );
-      }
-
-      &__contact {
-        margin-inline: rem(39);
-        height: rem(350);
-      }
-
-      &__bg {
-        bottom: initial;
-        right: initial;
-        margin: auto;
-        width: 100%;
-      }
-    }
-
-    &__nav {
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: rem(32);
-      padding-bottom: rem(32);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-      &--logo {
-        display: block;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: none;
-        width: auto;
-
-        img {
-          margin: auto;
-        }
-      }
-
-      .navbar {
-        ul {
-          flex-direction: row;
-        }
-      }
-    }
-
-    &__body {
-      padding: rem(80) rem(39);
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: flex-end;
-      text-align: left;
+    h2 {
+      font-size: var(--fs-reg);
+      font-weight: 700;
+      margin-bottom: 0;
+      line-height: inherit;
     }
   }
 }
