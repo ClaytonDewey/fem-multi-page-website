@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logoImg from '../../public/assets/shared/desktop/logo-light.png';
-import ctaImg from '../../public/assets/shared/desktop/bg-pattern-call-to-action.svg';
+import ctaImg from '../../public/assets/shared/desktop/footer-circles.svg';
 import { Navbar, SocialLinks } from '.';
 
 type FooterProps = {};
@@ -11,8 +11,14 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className='footer'>
       <div className='cta'>
-        {/* <Image src={ctaImg} alt='' role='' className='cta__bg' /> */}
-        <div className='cta__contact--body'>
+        <Image
+          src={ctaImg}
+          alt=''
+          height={584}
+          width={876}
+          className='cta__bg'
+        />
+        <div className='cta__body'>
           <h2>
             Let&rsquo;s talk about
             <br />
@@ -29,7 +35,7 @@ const Footer: React.FC<FooterProps> = () => {
       </div>
 
       <div className='footer__nav'>
-        <Link href='/' className='footer__logo'>
+        <Link href='/' className='footer__nav--logo'>
           <Image src={logoImg} alt='logo' width='197' height='27' />
           <h2 className='visually-hidden'>DESIGNO</h2>
         </Link>
@@ -44,7 +50,7 @@ const Footer: React.FC<FooterProps> = () => {
           Toronto, Ontario M9C 3J5
         </address>
 
-        <div className='footer__contact'>
+        <div className='footer__content--info'>
           <h2>Contact Us (Central Office)</h2>
           <p>P : +1 253-863-8967</p>
           <p>M : contact@designo.co</p>

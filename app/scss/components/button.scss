@@ -1,12 +1,13 @@
+@use '../util' as *;
+
 .btn {
   display: inline-flex;
-  height: 56px;
-  border-radius: 8px;
+  height: rem(56);
+  border-radius: rem(8);
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
-  width: 152px;
-  margin: 0 auto;
+  width: rem(152);
   text-decoration: none;
   line-height: 100%;
   letter-spacing: 1px;
