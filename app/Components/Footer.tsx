@@ -28,10 +28,10 @@ const Footer: React.FC<FooterProps> = () => {
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
           </p>
-          <Link href='/contact' className='btn btn__light'>
-            Get in touch
-          </Link>
         </div>
+        <Link href='/contact' className='btn btn__light'>
+          Get in touch
+        </Link>
       </div>
 
       <div className='footer__nav'>

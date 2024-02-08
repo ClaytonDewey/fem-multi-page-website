@@ -18,6 +18,30 @@
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: rem(2);
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        border-bottom: 1px solid currentColor;
+        width: 0;
+        transition: var(--transition);
+      }
+
+      &::before {
+        right: 50%;
+      }
+
+      &::after {
+        left: 50%;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        width: 50%;
+      }
     }
   }
 }

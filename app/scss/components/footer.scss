@@ -136,6 +136,8 @@
 }
 
 .cta {
+  @include flex(column, center, center);
+  gap: rem(32);
   position: absolute;
   top: rem(-180);
   padding: rem(64) rem(24);
@@ -151,15 +153,15 @@
     z-index: 1;
 
     h2 {
-      font-size: var(--fs-title-xl);
+      font-size: rem(32);
       font-weight: 500;
       line-height: rem(36);
       margin-bottom: rem(8);
     }
+  }
 
-    p {
-      margin-bottom: rem(32);
-    }
+  .btn {
+    z-index: 1;
   }
 
   &__bg {
@@ -187,6 +189,8 @@
   }
 
   @include breakpoint(large) {
+    flex-direction: row;
+    justify-content: space-between;
     top: rem(-220);
     left: 50%;
     transform: translateX(-50%);
@@ -198,25 +202,10 @@
     padding: rem(72) rem(95) rem(46);
 
     &__body {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      h4 {
-        margin: 0;
-        height: rem(98);
-      }
-
+      width: 50%;
+      max-width: rem(450);
       p {
         margin: 0;
-        grid-column: 1 / 2;
-        height: rem(78);
-      }
-
-      a {
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-        align-self: center;
-        justify-self: end;
       }
     }
 
