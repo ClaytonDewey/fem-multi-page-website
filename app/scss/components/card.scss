@@ -1,0 +1,90 @@
+@use '../util' as *;
+
+.card {
+  @include flex(column, center, center);
+  gap: rem(12);
+  width: 100%;
+  color: var(--clr-white);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--clr-black);
+  height: rem(250);
+  width: 100%;
+  border-radius: rem(15);
+  overflow: hidden;
+  text-decoration: none;
+  transition: var(--transition);
+
+  h2 {
+    letter-spacing: rem(2);
+    text-transform: uppercase;
+  }
+
+  font-size: var(--fs-small);
+  letter-spacing: rem(5);
+  text-transform: uppercase;
+  color: var(--clr-white);
+  text-decoration: none;
+
+  img {
+    display: inline-block;
+    margin-left: rem(16);
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 2000px rgba(232, 128, 105, 0.7);
+  }
+
+  &.web {
+    background-image: var(--gradient-bg),
+      url('/assets/home/mobile/image-web-design.jpg');
+  }
+  &.app {
+    background-image: var(--gradient-bg),
+      url('/assets/home/mobile/image-app-design.jpg');
+  }
+  &.graphic {
+    background-image: var(--gradient-bg),
+      url('/assets/home/mobile/image-graphic-design.jpg');
+  }
+
+  @include breakpoint(medium) {
+    height: rem(200);
+
+    h2 {
+      font-size: var(--fs-title-lg);
+    }
+
+    &.web {
+      background-image: var(--gradient-bg),
+        url('/assets/home/tablet/image-web-design.jpg');
+    }
+    &.app {
+      background-image: var(--gradient-bg),
+        url('/assets/home/tablet/image-app-design.jpg');
+    }
+    &.graphic {
+      background-image: var(--gradient-bg),
+        url('/assets/home/tablet/image-graphic-design.jpg');
+    }
+  }
+
+  @include breakpoint(large) {
+    height: auto;
+    &.web {
+      grid-row: span 2;
+      height: rem(640);
+      background-image: var(--gradient-bg),
+        url('/assets/home/desktop/image-web-design-large.jpg');
+    }
+    &.app {
+      background-image: var(--gradient-bg),
+        url('/assets/home/desktop/image-app-design.jpg');
+    }
+    &.graphic {
+      background-image: var(--gradient-bg),
+        url('/assets/home/desktop/image-graphic-design.jpg');
+    }
+  }
+}

@@ -28,54 +28,6 @@
     display: grid;
     gap: rem(24);
     padding: rem(120) rem(24) 0;
-
-    &--item {
-      @include flex(column, center, center);
-      gap: rem(12);
-      width: 100%;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-      color: var(--clr-white);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-color: var(--clr-black);
-      height: rem(250);
-      width: 100%;
-      border-radius: rem(15);
-      overflow: hidden;
-
-      h2 {
-        letter-spacing: rem(2);
-        text-transform: uppercase;
-      }
-
-      a {
-        font-size: var(--fs-small);
-        letter-spacing: rem(5);
-        text-transform: uppercase;
-        color: var(--clr-white);
-        text-decoration: none;
-
-        img {
-          display: inline-block;
-          margin-left: rem(16);
-        }
-      }
-      &.web {
-        background-image: var(--gradient-bg),
-          url('/assets/home/mobile/image-web-design.jpg');
-        color: var(--clr-white);
-      }
-      &.app {
-        background-image: var(--gradient-bg),
-          url('/assets/home/mobile/image-app-design.jpg');
-        color: var(--clr-white);
-      }
-      &.graphic {
-        background-image: var(--gradient-bg),
-          url('/assets/home/mobile/image-graphic-design.jpg');
-        color: var(--clr-white);
-      }
-    }
   }
 
   &__about {
@@ -123,32 +75,6 @@
 
     &__design {
       padding-inline: 0;
-
-      &--item {
-        height: rem(200);
-
-        h2 {
-          font-size: var(--fs-title-lg);
-        }
-      }
-
-      &--item {
-        &.web {
-          background-image: var(--gradient-bg),
-            url('/assets/home/tablet/image-web-design.jpg');
-          color: var(--clr-white);
-        }
-        &.app {
-          background-image: var(--gradient-bg),
-            url('/assets/home/tablet/image-app-design.jpg');
-          color: var(--clr-white);
-        }
-        &.graphic {
-          background-image: var(--gradient-bg),
-            url('/assets/home/tablet/image-graphic-design.jpg');
-          color: var(--clr-white);
-        }
-      }
     }
 
     &__about {
@@ -169,5 +95,12 @@
         }
       }
     }
+  }
+
+  @include breakpoint(large) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: rem(30);
+    grid-row-gap: rem(24);
   }
 }

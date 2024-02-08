@@ -5,6 +5,7 @@ import phoneImg from '../public/assets/home/desktop/image-hero-phone.png';
 import passionateImg from '../public/assets/home/desktop/illustration-passionate.svg';
 import resourcefulImg from '../public/assets/home/desktop/illustration-resourceful.svg';
 import friendlyImg from '../public/assets/home/desktop/illustration-friendly.svg';
+import { Card } from './Components';
 
 const Home = () => {
   return (
@@ -37,44 +38,9 @@ const Home = () => {
       </section>
 
       <section className='section section__design'>
-        <div className='section__design--item web'>
-          <h2>Web Design</h2>
-          <Link href='/web-design'>
-            View Projects
-            <Image
-              src='/assets/shared/desktop/icon-right-arrow.svg'
-              alt='arrow'
-              width={4}
-              height={8}
-            />
-          </Link>
-        </div>
-
-        <div className='section__design--item app'>
-          <h2>App Design</h2>
-          <Link href='/app-design'>
-            View Projects
-            <Image
-              src='/assets/shared/desktop/icon-right-arrow.svg'
-              alt='arrow'
-              width={4}
-              height={8}
-            />
-          </Link>
-        </div>
-
-        <div className='section__design--item graphic'>
-          <h2>Graphic Design</h2>
-          <Link href='/graphic-design'>
-            View Projects
-            <Image
-              src='/assets/shared/desktop/icon-right-arrow.svg'
-              alt='arrow'
-              width={4}
-              height={8}
-            />
-          </Link>
-        </div>
+        <Card type='web' title='Web Design' />
+        <Card type='app' title='App Design' />
+        <Card type='graphic' title='Graphic Design' />
       </section>
 
       <section className='section section__about'>
