@@ -47,3 +47,20 @@ body {
 img {
   display: block;
 }
+
+/* 
+  CSS tips...
+  https://medium.com/@creativebyte/10-lesser-known-css-tricks-part-2-37614754108e
+  Gradient Borders
+  .element {
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    background-image: linear-gradient(to right, red, blue);
+  }
+
+
+  Reading...
+  https://itnext.io/multitask-like-a-pro-with-the-wip-commit-2f4d40ca0192
+  https://medium.com/@adarshrai3011/53-javascript-frontend-interview-questions-e6013116eaa0
+  
+*/
