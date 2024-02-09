@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 type SocialLinksProps = {};
 
 const SocialLinks: React.FC<SocialLinksProps> = () => {
