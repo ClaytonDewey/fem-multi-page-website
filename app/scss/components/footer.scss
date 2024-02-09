@@ -5,9 +5,11 @@
   background-color: var(--clr-black);
   color: rgba(255, 255, 255, 0.5);
   position: relative;
+  margin-top: rem(190);
 
   &.contact {
     padding-top: rem(64);
+    margin-top: 0;
 
     .cta {
       display: none;
@@ -70,6 +72,7 @@
 
   @include breakpoint(medium) {
     padding: rem(166) 0 rem(80);
+    margin-top: rem(264);
 
     &.contact {
       padding-top: rem(90);
@@ -112,6 +115,7 @@
 
   @include breakpoint(large) {
     padding: rem(144) 0 rem(72);
+    margin-top: rem(220);
 
     &.contact {
       padding-top: rem(72);
@@ -139,10 +143,11 @@
   @include flex(column, center, center);
   gap: rem(32);
   position: absolute;
-  top: rem(-180);
+  top: rem(-190);
   padding: rem(64) rem(24);
   border-radius: rem(15);
   margin: 0 rem(24);
+  height: rem(379);
   text-align: center;
   background-color: var(--clr-primary);
   overflow: hidden;
@@ -174,6 +179,7 @@
   @include breakpoint(medium) {
     top: rem(-264);
     margin: 0 rem(40);
+    height: rem(350);
 
     &__body {
       h2 {
@@ -195,6 +201,7 @@
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
+    height: rem(292);
     max-width: rem(1110);
     min-width: rem(1000);
     width: 100%;
