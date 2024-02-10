@@ -1,12 +1,27 @@
 @use '../util' as *;
 
 .hero {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  text-align: center;
+  height: rem(843);
+  position: relative;
+  overflow: hidden;
+
+  &__body {
+    @include flex(column, center, center);
+    gap: rem(24);
+    padding: rem(120) rem(24);
+  }
+
   &__home {
-    margin: rem(-170) auto;
-    aspect-ratio: 624 / 913;
-    display: block;
-    width: 100%;
-    object-fit: cover;
+    &--img {
+      margin: rem(-170) auto;
+      aspect-ratio: 624 / 913;
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
 
     &--bg {
       position: absolute;
@@ -16,9 +31,13 @@
   }
 
   @include breakpoint(medium) {
+    border-radius: rem(15);
+
     &__home {
-      margin-top: rem(-160);
-      width: 75%;
+      &--img {
+        margin-top: rem(-160);
+        width: 75%;
+      }
 
       &--bg {
         left: rem(170);
@@ -26,3 +45,30 @@
     }
   }
 }
+
+// .hero {
+//   &__home {
+//     margin: rem(-170) auto;
+//     aspect-ratio: 624 / 913;
+//     display: block;
+//     width: 100%;
+//     object-fit: cover;
+
+//     &--bg {
+//       position: absolute;
+//       top: rem(102);
+//       left: 0;
+//     }
+//   }
+
+//   @include breakpoint(medium) {
+//     &__home {
+//       margin-top: rem(-160);
+//       width: 75%;
+
+//       &--bg {
+//         left: rem(170);
+//       }
+//     }
+//   }
+// }

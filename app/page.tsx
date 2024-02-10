@@ -10,8 +10,8 @@ import { Card } from './Components';
 const Home = () => {
   return (
     <main className='container'>
-      <section className='section section__hero'>
-        <div className='section__content section__content--hero'>
+      <section className='hero hero--home'>
+        <div className='hero__body'>
           <h2>Award-winning custom designs and digital branding solutions</h2>
           <p>
             With over 10 years in the industry, we are experienced in creating
@@ -27,7 +27,7 @@ const Home = () => {
           alt='phone'
           src={phoneImg}
           role='presentation'
-          className='hero__home'
+          className='hero__home--img'
         />
         <Image
           alt=''
