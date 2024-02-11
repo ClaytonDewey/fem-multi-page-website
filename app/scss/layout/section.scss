@@ -1,27 +1,12 @@
 @use '../util' as *;
 
 .section {
-  &__hero {
-    background: var(--clr-primary);
-    color: var(--clr-white);
-    text-align: center;
-    height: rem(843);
-    position: relative;
-    overflow: hidden;
-  }
-
   &__content {
     @include flex(column, center, center);
     gap: rem(24);
     padding: rem(120) rem(24);
     overflow: hidden;
     background-position: top right;
-
-    &--hero {
-      position: relative;
-      padding-block: rem(80);
-      z-index: 2;
-    }
   }
 
   &__design {
@@ -61,14 +46,6 @@
 
   // First media query
   @include breakpoint(medium) {
-    &__hero {
-      border-radius: rem(15);
-
-      p {
-        padding-inline: rem(70);
-      }
-    }
-
     &__content {
       padding: rem(60);
     }

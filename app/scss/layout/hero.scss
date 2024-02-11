@@ -9,9 +9,11 @@
   overflow: hidden;
 
   &__body {
+    position: relative;
     @include flex(column, center, center);
     gap: rem(24);
     padding: rem(120) rem(24);
+    z-index: 1;
   }
 
   &__home {
@@ -33,42 +35,55 @@
   @include breakpoint(medium) {
     border-radius: rem(15);
 
+    &__body {
+      padding: rem(60) rem(60) rem(110);
+
+      p {
+        padding-inline: rem(60);
+      }
+    }
+
     &__home {
       &--img {
-        margin-top: rem(-160);
+        position: relative;
+        margin-top: rem(-210);
         width: 75%;
+        z-index: 1;
       }
 
       &--bg {
+        top: rem(95);
         left: rem(170);
       }
     }
   }
+
+  @include breakpoint(large) {
+    height: rem(640);
+    @include flex(row, initial, space-between);
+
+    &__body {
+      text-align: left;
+      align-items: flex-start;
+      padding: 0 rem(60);
+      gap: rem(40);
+
+      p {
+        padding: 0;
+      }
+    }
+
+    &__home {
+      &--img {
+        width: 40%;
+        margin-top: 0;
+      }
+
+      &--bg {
+        top: 0;
+        right: 0;
+        margin-left: auto;
+      }
+    }
+  }
 }
-
-// .hero {
-//   &__home {
-//     margin: rem(-170) auto;
-//     aspect-ratio: 624 / 913;
-//     display: block;
-//     width: 100%;
-//     object-fit: cover;
-
-//     &--bg {
-//       position: absolute;
-//       top: rem(102);
-//       left: 0;
-//     }
-//   }
-
-//   @include breakpoint(medium) {
-//     &__home {
-//       margin-top: rem(-160);
-//       width: 75%;
-
-//       &--bg {
-//         left: rem(170);
-//       }
-//     }
-//   }
-// }

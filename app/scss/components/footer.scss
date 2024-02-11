@@ -131,6 +131,10 @@
       margin: rem(31) auto 0;
       justify-content: flex-start;
       gap: rem(210);
+
+      h2 {
+        line-height: rem(26);
+      }
     }
 
     &__social {
