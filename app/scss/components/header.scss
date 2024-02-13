@@ -6,6 +6,7 @@
   height: rem(96);
   padding-inline: rem(24);
   max-width: rem(1111);
+  font-family: inherit;
 
   &__logo {
     display: flex;
@@ -18,7 +19,7 @@
 
   @include breakpoint(medium) {
     height: rem(155);
-    padding-inline: rem(40);
+    padding-inline: 0;
 
     .navbar {
       display: block;

@@ -65,8 +65,14 @@
     &__body {
       text-align: left;
       align-items: flex-start;
-      padding: 0 rem(60);
+      padding: 0;
+      padding-left: rem(95);
       gap: rem(40);
+      max-width: rem(570);
+
+      h2 {
+        font-weight: 400;
+      }
 
       p {
         padding: 0;

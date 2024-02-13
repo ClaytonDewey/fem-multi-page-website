@@ -1,23 +1,16 @@
 @use '../util' as *;
 
 .section {
-  &__content {
-    @include flex(column, center, center);
-    gap: rem(24);
-    padding: rem(120) rem(24);
-    overflow: hidden;
-    background-position: top right;
-  }
+  padding: rem(120) rem(24) 0;
 
   &__design {
     display: grid;
     gap: rem(24);
-    padding: rem(120) rem(24) 0;
   }
 
   &__about {
     @include flex(column, center, center);
-    gap: rem(40);
+    gap: rem(80);
     padding-block: rem(120);
     text-align: center;
 
@@ -35,7 +28,6 @@
       font-size: var(--fs-reg);
       font-style: normal;
       font-weight: 400;
-      line-height: rem(26); /* 162.5% */
     }
 
     &--item {
@@ -46,15 +38,9 @@
 
   // First media query
   @include breakpoint(medium) {
-    &__content {
-      padding: rem(60);
-    }
-
-    &__design {
-      padding-inline: 0;
-    }
-
+    padding-inline: 0;
     &__about {
+      gap: rem(32);
       &--item {
         flex-direction: row;
         gap: rem(40);
@@ -65,8 +51,6 @@
       }
 
       .section__content {
-        padding-inline: 0;
-
         h2 {
           margin-bottom: rem(10);
         }
@@ -75,9 +59,30 @@
   }
 
   @include breakpoint(large) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: rem(30);
-    grid-row-gap: rem(24);
+    padding: rem(160) 0 0;
+
+    &__design {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: rem(30);
+      grid-row-gap: rem(24);
+    }
+
+    &__about {
+      flex-direction: row;
+      padding-bottom: rem(160);
+      gap: rem(50);
+
+      &--item {
+        flex-direction: column;
+
+        h2 {
+          margin-bottom: rem(32);
+        }
+      }
+      &--body {
+        text-align: center;
+      }
+    }
   }
 }
