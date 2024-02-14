@@ -87,4 +87,60 @@
         url('/assets/home/desktop/image-graphic-design.jpg');
     }
   }
+
+  // Portfolio
+  &__portfolio {
+    @include flex(column, center, space-between);
+    height: rem(478);
+    overflow: hidden;
+    border-radius: rem(15);
+
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__header {
+    height: rem(320);
+    display: flex;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__body {
+    @include flex(column, center, center);
+    height: rem(158);
+    gap: rem(16);
+    padding-inline: rem(20);
+    background-color: var(--clr-hover-bg);
+    color: var(--clr-black);
+    text-align: center;
+    text-decoration: none;
+    transition: var(--transition);
+
+    h2 {
+      color: var(--clr-primary);
+      font-size: rem(20);
+      line-height: rem(26);
+      text-transform: uppercase;
+      letter-spacing: rem(5);
+    }
+
+    p {
+      font-size: var(--fs-reg);
+      line-height: rem(26);
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: var(--clr-primary);
+      color: var(--clr-white);
+
+      h2 {
+        color: inherit;
+      }
+    }
+  }
 }
