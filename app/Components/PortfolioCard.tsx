@@ -1,19 +1,22 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import expressImg from '../../public/assets/web-design/desktop/image-express.jpg';
 
-type PortfolioCardProps = {};
+interface Props {
+  image: StaticImageData;
+  title: string;
+  text: string;
+}
 
-const PortfolioCard: React.FC<PortfolioCardProps> = () => {
+const PortfolioCard = ({ image, title, text }: Props) => {
   return (
     <div className='card__portfolio'>
       <div className='card__header'>
-        <Image src={expressImg} height={640} width={700} alt='Express' />
+        <Image src={image} alt={title} />
       </div>
       <Link href='/' className='card__body'>
-        <h2>Express</h2>
-        <p>A multi-carrier shipping website for ecommerce businesses</p>
+        <h2>{title}</h2>
+        <p>{text}</p>
       </Link>
     </div>
   );

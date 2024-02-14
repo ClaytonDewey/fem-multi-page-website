@@ -1,8 +1,10 @@
 import React from 'react';
 import { Portfolio } from '../Components';
+import Data from '../web-design/data';
 
-const page = ({ params }: { params: { type: string } }) => {
-  console.log(params);
+type pageProps = {};
+
+const page: React.FC<pageProps> = () => {
   return (
     <main className='container'>
       <section className='hero'>
@@ -14,7 +16,7 @@ const page = ({ params }: { params: { type: string } }) => {
           </p>
         </div>
       </section>
-      <Portfolio />
+      <Portfolio Data={Data} />
     </main>
   );
 };
