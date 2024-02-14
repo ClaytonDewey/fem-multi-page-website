@@ -1,5 +1,7 @@
 import React from 'react';
-import { Portfolio } from '../Components';
+import { Portfolio, Card } from '../Components';
+import { GraphicData } from '../data';
+
 type pageProps = {};
 
 const page: React.FC<pageProps> = () => {
@@ -14,8 +16,11 @@ const page: React.FC<pageProps> = () => {
           </p>
         </div>
       </section>
-
-      {/* <Portfolio /> */}
+      <Portfolio CardData={GraphicData} />
+      <section className='section section__design'>
+        <Card type='web' title='Web Design' />
+        <Card type='app' title='App Design' />
+      </section>
     </main>
   );
 };

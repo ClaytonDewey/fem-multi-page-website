@@ -1,6 +1,6 @@
 import React from 'react';
-import { Portfolio } from '../Components';
-import Data from '../web-design/data';
+import { Portfolio, Card } from '../Components';
+import { WebData } from '../data';
 
 type pageProps = {};
 
@@ -16,7 +16,11 @@ const page: React.FC<pageProps> = () => {
           </p>
         </div>
       </section>
-      <Portfolio Data={Data} />
+      <Portfolio CardData={WebData} />
+      <section className='section section__design'>
+        <Card type='app' title='App Design' />
+        <Card type='graphic' title='Graphic Design' />
+      </section>
     </main>
   );
 };

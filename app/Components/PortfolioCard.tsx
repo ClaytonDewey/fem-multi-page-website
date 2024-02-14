@@ -1,14 +1,10 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
-interface Props {
-  image: StaticImageData;
-  title: string;
-  text: string;
-}
+import { PortfolioData } from '../Types';
 
-const PortfolioCard = ({ image, title, text }: Props) => {
+const PortfolioCard = ({ image, title, text }: PortfolioData) => {
   return (
     <div className='card__portfolio'>
       <div className='card__header'>
