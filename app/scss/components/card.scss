@@ -144,4 +144,23 @@
       }
     }
   }
+
+  @include breakpoint(medium) {
+    &__portfolio {
+      flex-direction: row;
+      height: rem(320);
+
+      > * {
+        flex-basis: 50%;
+      }
+    }
+
+    &__header {
+      height: 100%;
+    }
+
+    &__body {
+      height: 100%;
+    }
+  }
 }
