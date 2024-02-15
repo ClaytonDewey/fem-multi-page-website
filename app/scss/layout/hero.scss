@@ -33,7 +33,7 @@
     }
   }
 
-  &:not(.hero__home) {
+  &:not(.hero--home) {
     background-image: url(../../../public/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: top right;
