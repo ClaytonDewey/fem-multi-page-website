@@ -3,6 +3,10 @@
 .section {
   padding: rem(120) rem(24) 0;
 
+  &:last-child {
+    padding-bottom: rem(120);
+  }
+
   &__design {
     display: grid;
     gap: rem(24);
@@ -11,7 +15,6 @@
   &__about {
     @include flex(column, center, center);
     gap: rem(80);
-    padding-block: rem(120);
     text-align: center;
 
     h2 {
@@ -61,6 +64,10 @@
   @include breakpoint(large) {
     padding: rem(160) 0 0;
 
+    &:last-child {
+      padding-bottom: rem(160);
+    }
+
     &__design {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
@@ -70,7 +77,6 @@
 
     &__about {
       flex-direction: row;
-      padding-bottom: rem(160);
       gap: rem(50);
 
       &--item {
