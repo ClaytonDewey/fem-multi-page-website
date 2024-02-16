@@ -90,5 +90,11 @@
         text-align: center;
       }
     }
+
+    &__portfolio {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+      gap: rem(30);
+    }
   }
 }

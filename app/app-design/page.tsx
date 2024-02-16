@@ -9,7 +9,7 @@ const page: React.FC<pageProps> = () => {
     <main className='container'>
       <section className='hero'>
         <div className='hero__body'>
-          <h1>App Design</h1>
+          <h2>App Design</h2>
           <p>
             Our mobile designs bring intuitive digital solutions to your
             customers right at their fingertips.

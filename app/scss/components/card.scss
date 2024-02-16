@@ -163,4 +163,16 @@
       height: 100%;
     }
   }
+
+  @include breakpoint(large) {
+    &__portfolio {
+      flex-direction: column;
+      height: rem(478);
+      width: rem(350);
+    }
+
+    &__body {
+      height: rem(158);
+    }
+  }
 }
