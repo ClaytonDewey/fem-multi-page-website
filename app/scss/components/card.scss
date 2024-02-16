@@ -94,10 +94,6 @@
     height: rem(478);
     overflow: hidden;
     border-radius: rem(15);
-
-    &:not(:last-child) {
-      margin-bottom: rem(40);
-    }
   }
 
   &__header {

@@ -9,7 +9,9 @@ import { Card } from './Components';
 
 const Home = () => {
   return (
-    <main className='container home'>
+    <main className='home'>
+      <div className='bg-leaf'></div>
+      <div className='bg-leaf'></div>
       <section className='hero hero--home'>
         <div className='hero__body'>
           <h2>Award-winning custom designs and digital branding solutions</h2>

@@ -1,0 +1,21 @@
+@use '../util' as *;
+
+main {
+  .bg-leaf {
+    position: absolute;
+    top: rem(475);
+    left: 0rem;
+    z-index: -1;
+    width: rem(1006);
+    height: rem(594);
+    background-image: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+    background-repeat: no-repeat;
+
+    &:nth-child(2) {
+      left: unset;
+      top: rem(1879);
+      right: rem(0);
+      transform: rotate(180deg);
+    }
+  }
+}

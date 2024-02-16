@@ -1,5 +1,12 @@
 @use '../util' as *;
 
+section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: rem(1111);
+  z-index: 1;
+}
+
 .section {
   padding: rem(120) rem(24) 0;
 
@@ -37,6 +44,11 @@
       @include flex(column, center, center);
       gap: rem(48);
     }
+  }
+
+  &__portfolio {
+    display: grid;
+    gap: rem(40);
   }
 
   // First media query
@@ -92,9 +104,8 @@
     }
 
     &__portfolio {
-      @include flex(row, center, center);
-      flex-wrap: wrap;
-      gap: rem(30);
+      grid-template-columns: repeat(3, 1fr);
+      gap: rem(32);
     }
   }
 }

@@ -1,9 +1,6 @@
 @use '../util' as *;
 
 .container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: rem(1111);
   position: relative;
 
   @include breakpoint(medium) {
@@ -16,29 +13,6 @@
     section {
       position: relative;
       z-index: 1;
-    }
-
-    &.home {
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        background-image: url(/assets/shared/desktop/bg-pattern-leaf.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: rem(594);
-        width: rem(1006);
-      }
-      &::before {
-        top: rem(320);
-        left: rem(-165);
-      }
-
-      &::after {
-        bottom: rem(-145);
-        right: rem(-165);
-        transform: rotate(180deg);
-      }
     }
   }
 }

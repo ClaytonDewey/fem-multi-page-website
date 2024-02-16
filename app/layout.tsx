@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Jost } from 'next/font/google';
+// import { Jost } from 'next/font/google';
 import './scss/style.scss';
 import { Footer, Header } from './Components';
 
-const jost = Jost({ subsets: ['latin'] });
+// const jost = Jost({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Frontend Mentor | Designo Agency Website Challenge',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={jost.className} suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true}>
         <Header />
         {children}
         <Footer />
